@@ -11,6 +11,9 @@ class FruitViewModel: ViewModel() {
     private var _randomMutableWord = MutableLiveData("")
     val randomLiveWord get() = _randomMutableWord
 
+        init {
+        getNextData()
+    }
     fun getNextData(){
         val currentWord = testDataList.random()
         val randomWord = currentWord.toCharArray()
