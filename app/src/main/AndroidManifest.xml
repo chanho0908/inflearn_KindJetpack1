@@ -10,11 +10,28 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.Inflearn_KindJetPack"
+        android:theme="@style/Theme.AppCompat.DayNight"
         tools:targetApi="31">
         <activity
-            android:name=".viewModel.ViewModelFactoryActivity"
+            android:name=".liveData.view.MainActivity"
             android:exported="true" />
+        <activity
+            android:name=".liveData.view.MapActivity"
+            android:exported="true"
+            android:theme="@style/Theme.AppCompat.DayNight" />
+        <activity
+            android:name=".liveData.view.FragmentActivity"
+            android:exported="true"
+            android:theme="@style/Theme.AppCompat.DayNight" />
+        <activity
+            android:name=".liveData.view.LiveDataActivity"
+            android:exported="true"
+            android:label="@string/title_activity_live_data"
+            android:theme="@style/Theme.AppCompat.DayNight" />
+        <activity
+            android:name=".viewModel.ViewModelFactoryActivity"
+            android:exported="true"
+            android:theme="@style/Theme.AppCompat.DayNight" />
         <activity
             android:name=".viewModel.ViewModelMainActivity"
             android:exported="true"

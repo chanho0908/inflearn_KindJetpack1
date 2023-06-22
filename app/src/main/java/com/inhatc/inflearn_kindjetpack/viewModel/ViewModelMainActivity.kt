@@ -16,7 +16,7 @@ class ViewModelMainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
 
         binding = ActivityViewModelMainBinding.inflate(layoutInflater)
-        viewModel = ViewModelProvider(this)[MainViewModel::class.java] // viewModel 생성
+        viewModel = ViewModelProvider(this, MainViewModelFactory(5000))[MainViewModel::class.java] // viewModel 생성
         setContentView(binding.root)
 
         binding.btnPlus.setOnClickListener {
@@ -34,5 +34,9 @@ class ViewModelMainActivity : AppCompatActivity() {
             transaction.commit()
         }
 
+        val transaction = manager.beginTransaction()
+        transaction.replace(R.id.frameLayout, TestFragment())
+        transaction.addToBackStack(null)
+        transaction.commit()
     }
 }
