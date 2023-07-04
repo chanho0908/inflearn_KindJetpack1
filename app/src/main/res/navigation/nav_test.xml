@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_test"
+    app:startDestination="@id/blankFragmentA">
+
+    <fragment
+        android:id="@+id/blankFragmentA"
+        android:name="com.inhatc.inflearn_kindjetpack.navigation.view.BlankFragmentA"
+        android:label="fragment_blanka"
+        tools:layout="@layout/fragment_blanka" >
+        <action
+            android:id="@+id/action_blankFragmentA_to_blankFragmentB"
+            app:destination="@id/blankFragmentB"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_out_right"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_out_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/blankFragmentB"
+        android:name="com.inhatc.inflearn_kindjetpack.navigation.view.BlankFragmentB"
+        android:label="fragment_blankb"
+        tools:layout="@layout/fragment_blankb" >
+        <action
+            android:id="@+id/action_blankFragmentB_to_blankFragmentC"
+            app:destination="@id/blankFragmentC"
+            app:exitAnim="@android:anim/slide_out_right" />
+        <argument
+            android:name="key"
+            app:argType="string"
+            android:defaultValue="디폴트값" />
+    </fragment>
+    <fragment
+        android:id="@+id/blankFragmentC"
+        android:name="com.inhatc.inflearn_kindjetpack.navigation.view.BlankFragmentC"
+        android:label="fragment_blank_c"
+        tools:layout="@layout/fragment_blank_c" >
+        <action
+            android:id="@+id/action_blankFragmentC_to_blankFragmentD"
+            app:destination="@id/blankFragmentD"
+            app:popUpTo="@id/blankFragmentA" />
+    </fragment>
+    <fragment
+        android:id="@+id/blankFragmentD"
+        android:name="com.inhatc.inflearn_kindjetpack.navigation.view.BlankFragmentD"
+        android:label="fragment_blank_d"
+        tools:layout="@layout/fragment_blank_d" >
+        <action
+            android:id="@+id/action_blankFragmentD_to_blankFragmentA"
+            app:destination="@id/blankFragmentA" />
+    </fragment>
+</navigation>

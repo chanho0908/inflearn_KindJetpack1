@@ -45,4 +45,10 @@
         libero vel nunc consequat, quis tincidunt nisl eleifend. Cras bibendum enim a justo luctus
         vestibulum. Fusce dictum libero quis erat maximus, vitae volutpat diam dignissim.
     </string>
+    <string name="title_activity_compose1">ComposeActivity1</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_activity_box">BoxActivity</string>
+    <string name="title_activity_list">ListActivity</string>
+    <string name="title_activity_image">ImageActivity</string>
+    <string name="title_activity_edit_text">EditTextActivity</string>
 </resources>

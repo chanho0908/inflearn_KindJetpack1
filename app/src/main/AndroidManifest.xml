@@ -15,6 +15,46 @@
         android:theme="@style/Theme.AppCompat.DayNight"
         tools:targetApi="31">
         <activity
+            android:name=".compose.EditTextActivity"
+            android:exported="true"
+            android:label="@string/title_activity_edit_text"
+            android:theme="@style/Theme.AppCompat.DayNight" />
+        <activity
+            android:name=".compose.ImageActivity"
+            android:exported="true"
+            android:label="@string/title_activity_image"
+            android:theme="@style/Theme.AppCompat.DayNight" />
+        <activity
+            android:name=".compose.ListActivity"
+            android:exported="true"
+            android:label="@string/title_activity_list"
+            android:theme="@style/Theme.AppCompat.DayNight" />
+        <activity
+            android:name=".compose.BoxActivity"
+            android:exported="true"
+            android:label="@string/title_activity_box"
+            android:theme="@style/Theme.AppCompat.DayNight" />
+        <activity
+            android:name=".compose.MainActivity"
+            android:exported="true"
+            android:label="@string/title_activity_main"
+            android:theme="@style/Theme.AppCompat.DayNight" />
+        <activity
+            android:name=".navigation.NavMainActivity"
+            android:exported="true" />
+        <activity
+            android:name=".workManager.view.IntervalActivity"
+            android:exported="true" />
+        <activity
+            android:name=".workManager.view.ProgressActivity"
+            android:exported="true" />
+        <activity
+            android:name=".workManager.view.ChainingActivity"
+            android:exported="true" />
+        <activity
+            android:name=".workManager.view.WorkManagerActivity"
+            android:exported="true" />
+        <activity
             android:name=".room.view.RoomActivity"
             android:exported="true" />
         <activity
