@@ -13,8 +13,6 @@ buildFeatures {
     }
 ```
 
-<br>
-
 ### Chap2. ViewModel
     - ViewModel<br>
     - ViewModel In Activity<br>
